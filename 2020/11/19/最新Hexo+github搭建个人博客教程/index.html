@@ -24,15 +24,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"8.0.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
 
-  <meta name="description" content="安装nodejs直接百度nodejs或者点击http:&#x2F;&#x2F;nodejs.org&#x2F;进行下载，安装稳定版本。安装后打开命令行输入 1node -v  检查是否安装成功。 注册github账号百度输入github选择官网http:&#x2F;&#x2F;github.com&#x2F;即可注册。注意用户名会成为你的Hexo博客用户名。 接着添加仓库，注意仓库名 （Repository name) 要按照: username.gith">
+  <meta name="description" content="安装nodejs直接百度nodejs或者点击http:&#x2F;&#x2F;nodejs.org&#x2F;进行下载，安装稳定版本。安装后打开命令行输入 node -v 检查是否安装成功。 Git 安装打开百度搜索github for windows，进入官网http:&#x2F;&#x2F;gitforwindows.org&#x2F;点击下载安装，命令行下输入git检验安装成功即可。 Hexo本地运行打开本地文件夹，以安装在D盘为例，新建一个名为bl">
 <meta property="og:type" content="article">
 <meta property="og:title" content="最新Hexo+github搭建个人博客教程">
 <meta property="og:url" content="http://example.com/2020/11/19/%E6%9C%80%E6%96%B0Hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="安装nodejs直接百度nodejs或者点击http:&#x2F;&#x2F;nodejs.org&#x2F;进行下载，安装稳定版本。安装后打开命令行输入 1node -v  检查是否安装成功。 注册github账号百度输入github选择官网http:&#x2F;&#x2F;github.com&#x2F;即可注册。注意用户名会成为你的Hexo博客用户名。 接着添加仓库，注意仓库名 （Repository name) 要按照: username.gith">
+<meta property="og:description" content="安装nodejs直接百度nodejs或者点击http:&#x2F;&#x2F;nodejs.org&#x2F;进行下载，安装稳定版本。安装后打开命令行输入 node -v 检查是否安装成功。 Git 安装打开百度搜索github for windows，进入官网http:&#x2F;&#x2F;gitforwindows.org&#x2F;点击下载安装，命令行下输入git检验安装成功即可。 Hexo本地运行打开本地文件夹，以安装在D盘为例，新建一个名为bl">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-11-19T11:42:55.577Z">
-<meta property="article:modified_time" content="2020-11-19T12:47:18.665Z">
+<meta property="article:modified_time" content="2020-11-20T15:33:15.748Z">
 <meta property="article:author" content="Yingzhao Zhang">
 <meta property="article:tag" content="brave">
 <meta name="twitter:card" content="summary">
@@ -153,7 +153,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <section class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E8%A3%85nodejs"><span class="nav-number">1.</span> <span class="nav-text">安装nodejs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B3%A8%E5%86%8Cgithub%E8%B4%A6%E5%8F%B7"><span class="nav-number">2.</span> <span class="nav-text">注册github账号</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Git-%E5%AE%89%E8%A3%85"><span class="nav-number">3.</span> <span class="nav-text">Git 安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo%E6%9C%AC%E5%9C%B0%E8%BF%90%E8%A1%8C"><span class="nav-number">4.</span> <span class="nav-text">Hexo本地运行</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E8%A3%85nodejs"><span class="nav-number">1.</span> <span class="nav-text">安装nodejs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Git-%E5%AE%89%E8%A3%85"><span class="nav-number">2.</span> <span class="nav-text">Git 安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo%E6%9C%AC%E5%9C%B0%E8%BF%90%E8%A1%8C"><span class="nav-number">3.</span> <span class="nav-text">Hexo本地运行</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo%E9%83%A8%E7%BD%B2%E5%88%B0github"><span class="nav-number">4.</span> <span class="nav-text">Hexo部署到github</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%A8%E5%86%8Cgithub%E8%B4%A6%E5%8F%B7"><span class="nav-number">4.1.</span> <span class="nav-text">注册github账号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AESSH-KEY"><span class="nav-number">4.2.</span> <span class="nav-text">配置SSH KEY</span></a></li></ol></li></ol></div>
         </section>
         <!--/noindex-->
 
@@ -231,10 +231,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2020-11-19 19:42:55 / Modified: 20:47:18" itemprop="dateCreated datePublished" datetime="2020-11-19T19:42:55+08:00">2020-11-19</time>
+      <time title="Created: 2020-11-19 19:42:55" itemprop="dateCreated datePublished" datetime="2020-11-19T19:42:55+08:00">2020-11-19</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2020-11-20 23:33:15" itemprop="dateModified" datetime="2020-11-20T23:33:15+08:00">2020-11-20</time>
+      </span>
 
   
 </div>
@@ -247,25 +253,28 @@
     
     <div class="post-body" itemprop="articleBody">
         <h1 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h1><p>直接百度nodejs或者点击<a target="_blank" rel="noopener" href="http://nodejs.org/" title="nodejs">http://nodejs.org/</a>进行下载，安装稳定版本。安装后打开命令行输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
-
+<pre><code>node -v</code></pre>
 <p>检查是否安装成功。</p>
-<h1 id="注册github账号"><a href="#注册github账号" class="headerlink" title="注册github账号"></a>注册github账号</h1><p>百度输入github选择官网<a target="_blank" rel="noopener" href="http://github.com/">http://github.com/</a>即可注册。注意用户名会成为你的Hexo博客用户名。</p>
-<p>接着添加仓库，注意仓库名 （Repository name) 要按照: username.github.io 的格式来，如我注册的用户名为zhangsan，那么我的仓库名 （Repository name) 为： zhangsan.github.io .</p>
 <h1 id="Git-安装"><a href="#Git-安装" class="headerlink" title="Git 安装"></a>Git 安装</h1><p>打开百度搜索github for windows，进入官网<a target="_blank" rel="noopener" href="http://gitforwindows.org/">http://gitforwindows.org/</a>点击下载安装，命令行下输入git检验安装成功即可。</p>
 <h1 id="Hexo本地运行"><a href="#Hexo本地运行" class="headerlink" title="Hexo本地运行"></a>Hexo本地运行</h1><p>打开本地文件夹，以安装在D盘为例，新建一个名为blog的文件夹。右击鼠标打开Git bash环境输入安装命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-
+<pre><code>npm install hexo-cli -g</code></pre>
 <p>回车，安装完成后，输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init zhangsan</span><br></pre></td></tr></table></figure>
-
+<pre><code>hexo init zhangsan</code></pre>
 <p>回车完成初始化，上述zhangsan表示博客名（用户名）。进入博客目录，git bash命令行下输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
-
+<pre><code>npm install</code></pre>
 <p>回车安装依赖。安装完成后直接输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
+<pre><code>hexo s</code></pre>
 <p>回车，即可完成Hexo本地运行。在浏览器中输入<a target="_blank" rel="noopener" href="http://localhost:4000/"> http://localhost:4000/</a>即可显示运行结果。若成功跳转至Hexo主页，则表示环境配置成功。</p>
+<h1 id="Hexo部署到github"><a href="#Hexo部署到github" class="headerlink" title="Hexo部署到github"></a>Hexo部署到github</h1><h2 id="注册github账号"><a href="#注册github账号" class="headerlink" title="注册github账号"></a>注册github账号</h2><p>百度输入github选择官网<a target="_blank" rel="noopener" href="http://github.com/">http://github.com/</a>即可注册。注意用户名会成为你的Hexo博客用户名。</p>
+<p>接着添加仓库，注意仓库名 （Repository name) 要按照: username.github.io 的格式来，如我注册的用户名为zhangsan，那么我的仓库名 （Repository name) 为： zhangsan.github.io .</p>
+<h2 id="配置SSH-KEY"><a href="#配置SSH-KEY" class="headerlink" title="配置SSH KEY"></a>配置SSH KEY</h2><p>打开git所在文件夹，右击鼠标，选择git bash exe进入git命令行，输入</p>
+<pre><code>ssh-keygen -t rsa -C &quot;邮件地址&quot;</code></pre>
+<p>然后连续3次回车，最终会生成一个文件在用户目录下，打开用户目录，找到.ssh\id_rsa.pub文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt;New SSH key. Title可任意填写。输入</p>
+<pre><code>ssh -T git@github.com # 注意邮箱地址不用改</code></pre>
+<p>回车检测是否成功。</p>
+<p>此时还需要进一步配置：</p>
+<pre><code>git config --global user.name &quot;username&quot; // 你的github用户名，非昵称   
+git config --global user.email  &quot;xxx@qq.com&quot;// 填写你的github注册邮箱</code></pre>
 
     </div>
 
